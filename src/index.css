@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.buttonProject3{
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+    color: white;
+    font-weight: 600;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+    border: 1px solid yellowgreen;
+}
+.buttonProject3:hover{
+	background-color: var(--bg-clr-two);
+	color: orange;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid orange;
+}
+
+
+.buttonProject2{
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+    color: black;
+    font-weight: 600;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+    border: 1px solid yellowgreen;
+}
+.buttonProject2:hover{
+	background-color: var(--bg-clr-two);
+	color: orange;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid orange;
+}
