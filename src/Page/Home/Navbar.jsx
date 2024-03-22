@@ -1,13 +1,38 @@
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
+import Swal from "sweetalert2";
+import { FaUser } from "react-icons/fa";
 
 
 const Navbar = () => {
+    const { user, logOut } = useAuth();
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
         <li><Link className='font-semibold text-white' to='/whoUse'>Who Can Use</Link></li>
         <li><Link className='font-semibold text-white' to='/faq'>FA questions</Link></li>
-        <li><Link className='font-semibold text-white' to='/signin'>Login</Link></li>
+        <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
     </>
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Logout Successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            })
+            .catch(() => {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Your work has been saved",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            })
+    }
     return (
         <div>
             <div className="navbar fixed z-10 bg-opacity-30 bg-black text-white">
@@ -32,20 +57,20 @@ const Navbar = () => {
                         <label tabIndex={0} className="m-5">
                             <div className="avatar">
                                 <div className="w-10 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
-                                    {/* {
+                                    {
                                         user ? <div><img className="mr-3 w-[40px] rounded-full" src={user.photoURL} alt="" /></div> : <FaUser className='mx-auto text-3xl'></FaUser>
-                                    } */}
+                                    }
                                 </div>
                             </div>
                         </label>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-red-400 rounded-box w-52">
-                            {/* <div>
+                            <div>
                                 <div className='my-5 text-xs text-white'>User Email : <br />{user ? <>{user.email}</> : <span className='text-black font-bold'>You are not Logged in</span>}</div>
 
                                 <li><Link to='/dashboardPage' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
 
                                 <li><Link className='font-semibold text-gray-200 mx-auto' ><button onClick={handleLogOut} className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600 w-full'>Log Out</button></Link></li>
-                            </div> */}
+                            </div>
                         </ul>
                     </div>
 
