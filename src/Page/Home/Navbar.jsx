@@ -8,7 +8,7 @@ const Navbar = () => {
     const { user, logOut } = useAuth();
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/dashboard'>Dashboard</Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard/myProject'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
     </>
     const handleLogOut = () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
                     <div className="dropdown dropdown-left z-10">
                         <label tabIndex={0} className="m-5">
                             <div className="avatar">
-                                <div className="w-10 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
+                                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     {
                                         user ? <div><img className="mr-3 w-[40px] rounded-full" src={user.photoURL} alt="" /></div> : <FaUser className='mx-auto text-3xl'></FaUser>
                                     }

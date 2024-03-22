@@ -1,3 +1,4 @@
+import { FaUser } from "react-icons/fa";
 import useAuth from "../../Hooks/useAuth";
 
 

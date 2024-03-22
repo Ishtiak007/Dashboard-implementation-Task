@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa6";
 import { RiAppsFill } from "react-icons/ri";
@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <ul className="menu">
                     {
                         <div>
-                            <li className="text-center"><><img className="w-40" src={logo} alt="" /></></li>
+                            <Link to='/' className="text-center"><><img className="w-32" src={logo} alt="" /></></Link>
                             <div className="divider"></div>
                             <li>
                                 <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/myProject'><FaDatabase></FaDatabase>My Project</NavLink>
@@ -53,7 +53,6 @@ const Dashboard = () => {
             </div>
             {/* dahsboard content */}
             <div className="flex-1 bg-slate-50">
-
                 <DashboardNav></DashboardNav>
                 <Outlet></Outlet>
             </div>
