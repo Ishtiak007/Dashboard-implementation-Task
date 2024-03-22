@@ -8,7 +8,6 @@ const Navbar = () => {
     const { user, logOut } = useAuth();
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/whoUse'>Who Can Use</Link></li>
         <li><Link className='font-semibold text-white' to='/faq'>FA questions</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
     </>
@@ -45,7 +44,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost lg:text-xl">Dash<span className="text-red-500 font-bold">Imple</span></Link>
+                    <Link to='/' className="btn btn-ghost lg:text-xl"><span className="text-red-500">N</span><span className="text-white">ecleo</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -67,7 +66,7 @@ const Navbar = () => {
                             <div>
                                 <div className='my-5 text-xs text-white'>User Email : <br />{user ? <>{user.email}</> : <span className='text-black font-bold'>You are not Logged in</span>}</div>
 
-                                <li><Link to='/dashboardPage' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
+                                <li><Link to='/dashboard' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
 
                                 <li><Link className='font-semibold text-gray-200 mx-auto' ><button onClick={handleLogOut} className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600 w-full'>Log Out</button></Link></li>
                             </div>
