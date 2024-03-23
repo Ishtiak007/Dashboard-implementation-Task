@@ -24,11 +24,11 @@ const Dashboard = () => {
                                 <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/myProject'><FaDatabase></FaDatabase>My Project</NavLink>
                             </li>
                             <li>
-                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/addItems'><RiAppsFill></RiAppsFill>Sample Projects</NavLink>
+                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/projectsCard'><RiAppsFill></RiAppsFill>Sample Projects</NavLink>
                             </li>
                             <div className="divider"></div>
                             <li>
-                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/manageItems'><TbApps></TbApps>Apps</NavLink>
+                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en&gl=US'><TbApps></TbApps>Apps</NavLink>
                             </li>
                             <li>
                                 <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/bookings'><FaPlayCircle></FaPlayCircle> Intro to Necleo</NavLink>

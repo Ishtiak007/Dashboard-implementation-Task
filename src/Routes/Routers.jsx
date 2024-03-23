@@ -8,6 +8,7 @@ import Login from "../Page/Login/Login";
 import Register from "../Page/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import MyProject from "../Components/MyProject/MyProject";
+import Projects from "../Components/Projects/Projects";
 
 
 export const router = createBrowserRouter([
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
             {
                 path: 'myProject',
                 element: <MyProject></MyProject>
+            },
+            {
+                path: 'projectsCard',
+                element: <Projects></Projects>
             }
         ]
     }
