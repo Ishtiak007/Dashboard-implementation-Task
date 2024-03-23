@@ -31,7 +31,7 @@ const Dashboard = () => {
                                 <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en&gl=US'><TbApps></TbApps>Apps</NavLink>
                             </li>
                             <li>
-                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/bookings'><FaPlayCircle></FaPlayCircle> Intro to Necleo</NavLink>
+                                <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='https://www.seequenze.com/'><FaPlayCircle></FaPlayCircle> Intro to Necleo</NavLink>
                             </li>
                         </div>
                     }
@@ -46,7 +46,7 @@ const Dashboard = () => {
                             <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/feedback'><MdFeedback></MdFeedback>Feedback</NavLink>
                         </li>
                         <li>
-                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/menu'><TbLayoutSidebarLeftCollapse></TbLayoutSidebarLeftCollapse>Collapse</NavLink>
+                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to=''><TbLayoutSidebarLeftCollapse></TbLayoutSidebarLeftCollapse>Collapse</NavLink>
                         </li>
                     </div>
                 </ul>
