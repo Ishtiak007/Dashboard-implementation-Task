@@ -1,50 +1,56 @@
 [
     {
-        "id":"0",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3333,
         "url":"https://unsplash.com/photos/yC-Yzbqy7PY",
-        "download_url":"https://picsum.photos/id/0/5000/3333"
+        "download_url":"https://picsum.photos/id/0/5000/3333",
+        "title": "Online Clothing Store",
+        "details": "Create a web app for selling clothes online. Features include product catalog, user accounts, shopping cart, and secure payment gateways. Technologies: React, Node.js, MongoDB."
     },
     {
-        "id":"1",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3333,
         "url":"https://unsplash.com/photos/LNRyGwIJr5c",
-        "download_url":"https://picsum.photos/id/1/5000/3333"
+        "download_url":"https://picsum.photos/id/1/5000/3333",
+        "title": "Artisan Marketplace",
+        "details": "Develop a platform for artisans to showcase and sell handmade products. Includes user profiles, product listings, reviews, and messaging. Tech stack: Django, PostgreSQL, Vue.js."
     },
     {
-        "id":"2",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3333,
         "url":"https://unsplash.com/photos/N7XodRrbzS0",
-        "download_url":"https://picsum.photos/id/2/5000/3333"
+        "download_url":"https://picsum.photos/id/2/5000/3333",
+        "title": "Digital Bookstore",
+        "details": "Build a website to sell digital books. Features include book categories, user authentication, search functionality, and downloadable content. Stack: Angular, Express, MongoDB."
     },
     {
-        "id":"3",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3333,
         "url":"https://unsplash.com/photos/Dl6jeyfihLk",
-        "download_url":"https://picsum.photos/id/3/5000/3333"
+        "download_url":"https://picsum.photos/id/3/5000/3333",
+        "title": "Food Delivery Service",
+        "details": "Create an app for ordering food online. Features include restaurant listings, menu browsing, user reviews, order tracking, and payment integration. Tools: React Native, Firebase."
     },
     {
-        "id":"4",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3333,
         "url":"https://unsplash.com/photos/y83Je1OC6Wc",
-        "download_url":"https://picsum.photos/id/4/5000/3333"
+        "download_url":"https://picsum.photos/id/4/5000/3333",
+        "title": "Custom Gift Shop",
+        "details": "Develop an e-commerce site for personalized gifts. Includes product customization, order tracking, wishlist, and secure checkout. Frameworks: Laravel, MySQL, React."
     },
     {
-        "id":"5",
         "author":"Alejandro Escamilla",
         "width":5000,
         "height":3334,
         "url":"https://unsplash.com/photos/LF8gK8-HGSg",
-        "download_url":"https://picsum.photos/id/5/5000/3334"
+        "download_url":"https://picsum.photos/id/5/5000/3334",
+        "title": "Electronic Gadgets Store",
+        "details": "Design a platform for selling electronic devices. Features include product comparisons, user reviews, order history, and integration with shipping services. Stack: ASP.NET Core, SQL Server, React."
     }
 ]
