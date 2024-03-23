@@ -48,7 +48,7 @@ const ProjectsCard = ({ item }) => {
                     <p>Height : {height}</p>
                     <div className="card-actions justify-center my-8">
                         <Link to={`/cardDetails/${_id}`}><button className="buttonProject2">Details</button></Link>
-                        <button className="buttonProject2">Update</button>
+                        <Link to={`/updateProject/${_id}`} className="buttonProject2">Update</Link>
                         <button onClick={() => handleDelete(item._id)} className="buttonProject2 flex items-center gap-2">Detete<FaTrash className="text-base text-red-400"></FaTrash></button>
                     </div>
                 </div>
