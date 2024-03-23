@@ -9,6 +9,7 @@ import Register from "../Page/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import MyProject from "../Components/MyProject/MyProject";
 import Projects from "../Components/Projects/Projects";
+import CardDetails from "../Components/CardDetails/CardDetails";
 
 
 export const router = createBrowserRouter([
@@ -41,6 +42,11 @@ export const router = createBrowserRouter([
             {
                 path: 'projectsCard',
                 element: <Projects></Projects>
+            },
+            {
+                path: 'cardDetails/:id',
+                element: <CardDetails></CardDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/projects/${params.id}`)
             }
         ]
     }
