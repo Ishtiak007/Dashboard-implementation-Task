@@ -8,8 +8,7 @@ const Navbar = () => {
     const { user, logOut } = useAuth();
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/whoUse'>Who Can Use</Link></li>
-        <li><Link className='font-semibold text-white' to='/faq'>FA questions</Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard/myProject'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
     </>
     const handleLogOut = () => {
@@ -45,7 +44,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost lg:text-xl">Dash<span className="text-red-500 font-bold">Imple</span></Link>
+                    <Link to='/' className="btn btn-ghost lg:text-xl"><span className="text-red-500">N</span><span className="text-white">ecleo</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -56,7 +55,7 @@ const Navbar = () => {
                     <div className="dropdown dropdown-left z-10">
                         <label tabIndex={0} className="m-5">
                             <div className="avatar">
-                                <div className="w-10 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
+                                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     {
                                         user ? <div><img className="mr-3 w-[40px] rounded-full" src={user.photoURL} alt="" /></div> : <FaUser className='mx-auto text-3xl'></FaUser>
                                     }
@@ -67,7 +66,7 @@ const Navbar = () => {
                             <div>
                                 <div className='my-5 text-xs text-white'>User Email : <br />{user ? <>{user.email}</> : <span className='text-black font-bold'>You are not Logged in</span>}</div>
 
-                                <li><Link to='/dashboardPage' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
+                                <li><Link to='/dashboard' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
 
                                 <li><Link className='font-semibold text-gray-200 mx-auto' ><button onClick={handleLogOut} className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600 w-full'>Log Out</button></Link></li>
                             </div>
