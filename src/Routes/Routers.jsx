@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import MyProject from "../Components/MyProject/MyProject";
 import Projects from "../Components/Projects/Projects";
 import CardDetails from "../Components/CardDetails/CardDetails";
+import Feedback from "../Components/Feedback/Feedback";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: 'cardDetails/:id',
+                element: <CardDetails></CardDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/projects/${params.id}`)
             }
         ]
     },
@@ -44,9 +50,8 @@ export const router = createBrowserRouter([
                 element: <Projects></Projects>
             },
             {
-                path: 'cardDetails/:id',
-                element: <CardDetails></CardDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/projects/${params.id}`)
+                path: 'feedback',
+                element: <Feedback></Feedback>
             }
         ]
     }

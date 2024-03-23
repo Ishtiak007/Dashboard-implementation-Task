@@ -12,9 +12,9 @@ import logo from '../assets/logo.jpg'
 
 const Dashboard = () => {
     return (
-        <div className="flex p-2">
+        <div className="lg:flex p-2">
             {/* bashboard sidebar */}
-            <div className="w-56 min-h-screen bg-[#FFFFFF] rounded-md">
+            <div className="w-56 min-h-screen mx-auto bg-[#FFFFFF] rounded-md">
                 <ul className="menu">
                     {
                         <div>
@@ -40,10 +40,10 @@ const Dashboard = () => {
 
                     <div className="lg:mt-80">
                         <li>
-                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/'><BsFillQuestionCircleFill></BsFillQuestionCircleFill>Help & Support</NavLink>
+                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='https://www.seequenze.com/'><BsFillQuestionCircleFill></BsFillQuestionCircleFill>Help & Support</NavLink>
                         </li>
                         <li>
-                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/order/salad'><MdFeedback></MdFeedback>Feedback</NavLink>
+                            <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/dashboard/feedback'><MdFeedback></MdFeedback>Feedback</NavLink>
                         </li>
                         <li>
                             <NavLink className={`text-[#C4C4C4] text-base active:text-orange-400`} to='/menu'><TbLayoutSidebarLeftCollapse></TbLayoutSidebarLeftCollapse>Collapse</NavLink>
